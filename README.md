@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+    An adaptive website has multiple media queries built in to cover a range of set user screen widths. A fully responsive website has been built to look good on every screen sizes.
 
 2. Describe what it means to be mobile first vs desktop first.
+    Dekstop first means you design your website to be primarily be on computer and then design for the mobile version after the fact this usually includes use the (max-width: #px) command. Mobile first means you design your website to primarily be used on the phone, and then program in the dekstop version in later this primarily uses (min-width: #px).
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    It means that a rem is equal to 10px which makes the math very easy ex : 1.5 rem = 15px
 
 4. How would you describe preprocessing to someone new to CSS?
+    It is like a 3rd party update to CSS that adds a lot of quality of life functionality. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+    parametric-mixins, escape media queries 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
