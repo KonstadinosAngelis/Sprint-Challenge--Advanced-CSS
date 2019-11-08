@@ -170,6 +170,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro .headerImg {
+  border-radius: 20%;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -211,6 +214,18 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  font-size: 1.5rem;
+  background-color: #22283A;
+  color: white;
+  border-radius: 10px;
+  display: inline;
+  padding: 2.5% 6%;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #22283a;
+  color: gray;
 }
 .home .walk .walk-img {
   width: 46%;
