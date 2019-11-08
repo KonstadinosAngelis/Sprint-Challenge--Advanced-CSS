@@ -1,3 +1,11 @@
+@keyframes mover {
+  from {
+    background-color: #22283A;
+  }
+  to {
+    background-color: coral;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -298,57 +306,66 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-img {
+.home .walk-img {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .walk-img {
     width: 99%;
     margin-left: 0%;
   }
 }
-.home .walk .walk-img img {
+.home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.home .signUp h4 {
+.signUp h4 {
   font-size: 3rem;
   text-align: center;
 }
-.home .signUp .btn {
+.signUp .btn {
   font-size: 1.5rem;
   background-color: #22283A;
   color: white;
   border-radius: 10px;
   display: inline;
   padding: 2.5% 6%;
+  transition: all 0.3s ease;
   margin-bottom: 5%;
   margin-left: 40%;
 }
 @media (max-width: 500px) {
-  .home .signUp .btn {
+  .signUp .btn {
     display: block;
     padding: 6% 0%;
+    margin: 0 auto;
     text-align: center;
   }
 }
-.home .signUp .btn:hover {
-  background-color: #22283a;
-  color: gray;
+.signUp .btn:hover {
+  animation: mover 2s;
+  animation-iteration-count: infinite;
 }
-.home .signUp .inputInfo {
+.signUp .btn a {
+  text-decoration: none;
+  color: white;
+}
+.signUp .inputInfo {
   display: flex;
   flex-direction: column;
   margin: 2% 0;
 }
-.home .signUp .inputInfo .firstName,
-.home .signUp .inputInfo .lastName {
+.signUp .inputInfo .firstName,
+.signUp .inputInfo .lastName {
   border-radius: 4px;
-  padding: 2% 2%;
+  padding: 2%;
   border: 1px solid #ccc;
+  margin-bottom: 2%;
 }
-.home .signUp .inputInfo .country {
+.signUp .inputInfo .country {
+  border-radius: 4px;
   margin-bottom: 5%;
+  padding: 1%;
 }
